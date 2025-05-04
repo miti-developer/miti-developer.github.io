@@ -97,3 +97,34 @@ footer {
 	--text-color: #ecf0f1;
 	--card-background: #2c3e50;
 }
+
+.project-button {
+	display: inline-block;
+	background-color: var(--primary-color);
+	color: white;
+	text-decoration: none;
+	padding: 0.5rem 1rem;
+	border-radius: 4px;
+	margin-top: 1rem;
+	transition: background-color 0.3s ease, transform 0.2s ease;
+	text-align: center;
+	font-weight: bold;
+}
+
+.project-button:hover {
+	background-color: var(--secondary-color);
+	transform: translateY(-3px);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.project-button:active {
+	transform: translateY(-1px);
+}
+
+/* Garante que o botão se adapte bem em telas menores */
+@media (max-width: 768px) {
+	.project-button {
+		display: block;
+		width: 100%;
+	}
+}
